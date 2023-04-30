@@ -1,0 +1,54 @@
+/*------------------------------------*\
+    VARIABLES
+\*------------------------------------*/
+
+//Alignament & Custom Styles
+$left:left;
+$center:center;
+$italic:italic;
+$normal:normal;
+$capitalize:capitalize;
+$upper: uppercase;
+
+
+//Cursors
+$hand:pointer;
+$default:default;
+
+
+
+
+
+
+//NOT USING (I THINK !)
+
+//Stylish Variables
+%fixHeight {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+//Grid Default Stylish
+.grid {
+    @extend %fixHeight;
+}
+
+%sizing {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+%inline {
+    &:after {
+        @extend %fixHeight;
+    }
+    vertical-align: top;
+    display: inline-block;
+    float:left;
+    @extend %sizing;
+    text-align: $left;
+}

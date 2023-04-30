@@ -1,0 +1,83 @@
+/*------------------------------------*\
+	
+    SLICK ARROWS
+    
+\*------------------------------------*/
+
+
+button.slick-arrow {
+	position: absolute;
+    top: calc(50% - 21px);
+    width: 42px;
+	height: 42px;
+	
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1;
+    
+    font-size: 0;
+    
+    background: transparent;
+    border: 0;
+    
+	&:after {
+        @include pseudo;
+        @include fa-icon;
+        @extend .fal;
+        
+        position: relative;
+
+        font-size: 25px;
+
+        vertical-align: 0;
+        
+		@include effect(all, 250ms, ease-in-out);
+		
+		color: #CCCCD1;
+    }
+	
+	&.slick-prev {
+		left: -20px;
+		
+		&:after {
+			content: fa-content($fa-var-chevron-left);
+		}
+							
+		@include mq('1360', min) {
+		    left: -90px;
+		}
+							
+		@include mq('1550', min) {
+		    left: -140px;
+		}
+	}
+	
+	&.slick-next {
+		right: -20px;
+		
+		&:after {
+			content: fa-content($fa-var-chevron-right);
+		}
+							
+		@include mq('1360', min) {
+		    right: -90px;
+		}
+							
+		@include mq('1550', min) {
+		    right: -140px;
+		}
+	}
+	
+	&:hover {
+		
+		&:after {
+			
+		}
+	}
+}
+
+.carousel-active{
+	display: block !important;
+}

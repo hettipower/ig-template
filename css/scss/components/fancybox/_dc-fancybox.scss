@@ -1,0 +1,23 @@
+/*------------------------------------*\
+	
+	DC FANCYBOX
+    
+\*------------------------------------*/
+
+
+.compensate-for-scrollbar {
+	margin-right: auto !important;
+}
+
+
+.fancybox-container {
+    z-index: 100000;
+    
+    &.fancybox-is-open {
+	    
+	    .fancybox-bg {
+	        opacity: 1;
+			background: rgba(36, 62, 83, .96);
+		}
+	}
+}

@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    GLOBAL - SITE WIDE
+\*------------------------------------*/
+
+button {
+    outline: none !important;
+    @include effect(all, 250ms, ease-in-out);
+}
+
+input[type=submit] {
+    @include effect(all, 250ms, ease-in-out);
+}
+
+.page_container {
+	background: white;
+	
+    width: 100%;
+    max-width: 1920px;
+}
+
+.page_container > .panel{
+    max-width: 100%;
+    background: $content_bg_color;
+}

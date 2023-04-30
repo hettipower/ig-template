@@ -1,0 +1,52 @@
+/*------------------------------------*\
+	
+    SCSS COMPILE LIST
+    
+\*------------------------------------*/
+
+/* DEFAULT RESPONSIVE LAYOUTS */
+@import "default/_reset";
+@import "default/_mixins";
+@import "default/_fonts";
+
+/* FONTAWESOME */
+@import 'fontawesome/fontawesome';
+@import 'fontawesome/light.scss';
+@import 'fontawesome/regular.scss';
+@import 'fontawesome/solid.scss';
+@import 'fontawesome/brands.scss';
+@import 'fontawesome/thin.scss';
+
+/* SETTINGS - GRID */
+@import "app/base/settings/_settings.widths";
+@import "app/base/settings/_settings.breakpoints";
+
+/* SETTINGS - COLORS */
+@import "app/base/settings/_dc.settings.colors.theme";
+
+/* SETTINGS - FONTS */
+@import "app/fonts/settings/_settings.font.family";
+@import "app/fonts/settings/_settings.font.sizes"; // C to fix
+@import "app/fonts/settings/_settings.font.colors";
+
+
+/* GLOBAL APP */
+@import "app/misc/_variables";
+@import "app/misc/_global";
+
+/* GLOBAL APP - BASE */
+@import "app/fonts/_base.fonts";
+@import "app/base/_base.links";
+@import "app/base/_base.buttons";
+@import "app/base/_base.lists";
+@import "app/base/_base.images";
+
+/* COMPONENTS */
+@import "components/_section";
+
+/* SLICK SLIDER */
+@import "components/slick/_slick.dots";
+@import "components/slick/_slick.arrows";
+
+/* FANCYBOX */
+@import "components/fancybox/_dc-fancybox";

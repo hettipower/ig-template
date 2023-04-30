@@ -1,0 +1,157 @@
+/*------------------------------------*\
+
+ARTICLE SECTION 
+
+\*------------------------------------*/
+
+
+// SETTINGS
+$section_spacing: 130px;
+$section_spacing_mob: 70px;
+
+
+.section {
+	&.woocommerce-breadcrumb {
+
+
+		// DEFAULT SECTION STYLES + WIDTHS
+		position: relative;
+
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		>.inner {
+			@include dc_max_width($default_padding, $default_padding);
+
+			z-index: 1;
+
+			@include mq('tablet', max) {
+				@include dc_max_width($default_padding_mobile, $default_padding_mobile);
+			}
+
+			@include mq('1200', min) {
+				padding-left: 60px;
+				padding-right: 60px;
+			}
+		}
+
+
+		// FULL WIDTH
+		&.fullwidth {
+
+			>.inner {
+				max-width: 1920px;
+			}
+		}
+
+
+		// SECTION SPACING TOP & BOTTOM
+		padding-top: $section_spacing_mob;
+		padding-bottom: $section_spacing_mob;
+
+		@include mq('tablet', min) {
+			padding-top: $section_spacing - 30px;
+			padding-bottom: $section_spacing - 30px;
+		}
+
+		@include mq('950', min) {
+			padding-top: $section_spacing;
+			padding-bottom: $section_spacing;
+		}
+
+		&.bg_white+.bg_white,
+		&.bg_white+script+.bg_white,
+		&.bg_grey+.bg_grey,
+		&.bg_grey+script+.bg_grey,
+		&.bg_blue+.bg_blue,
+		&.bg_blue+script+.bg_blue {
+			padding-top: 0;
+		}
+	}
+}
+
+
+// SECTION INTRO
+.section {
+
+	&:not(.title-side) {
+
+		>.inner {
+
+			>.section_intro {
+				position: relative;
+				width: 100%;
+				max-width: 1100px;
+				margin: 0 auto 50px;
+
+				text-align: center;
+
+				@include mq('tablet', min) {
+					margin-bottom: 70px;
+				}
+
+				.description {
+
+					p {
+
+						&:last-child {
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// SECTION BACKGROUNDS
+.section {
+
+	&.bg_white {
+		background: $white;
+	}
+
+	&.bg_grey {
+		background: $greylight;
+	}
+
+	&.bg_blue {
+		background: $theme_color2;
+	}
+}
+
+
+// SECTION BUTTON
+.section {
+
+	>.inner {
+
+		>.button-wrapper {
+			text-align: center;
+
+			margin-top: 50px;
+
+			@include mq('tablet', min) {
+				margin-top: 110px;
+			}
+
+			@include mq('tablet', max) {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			a {
+
+				&:nth-child(2) {
+					margin-left: 16px;
+
+					@include mq('tablet', max) {
+						margin: 20px 0 0 0;
+					}
+				}
+			}
+		}
+	}
+}

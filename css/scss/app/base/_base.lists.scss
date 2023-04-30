@@ -1,0 +1,41 @@
+/*--------------------------------------------------------*\
+	
+    BASE - LISTS
+
+	- includes a higher class for coloured bullets
+	
+\*--------------------------------------------------------*/
+
+
+
+ul, ol {
+    margin-bottom: 12px;
+
+	li {
+		@extend %base_font_family;
+		letter-spacing: .5px;
+	    line-height: $base_line_height;
+		color: $body_color;
+
+		margin-left: 25px;
+	    padding-bottom: 4px;
+	    
+	    position: relative;
+		
+		.color-dots & {   
+			list-style: none;
+			
+			&:before {
+				content: "•";
+				color: $theme_color;
+				display: inline-block; 
+				width: 15px;
+				font-size: 2em;
+				
+				position: absolute;
+				top: -2px;
+				left: -25px;
+			}
+		}
+	}
+}

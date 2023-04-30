@@ -1,0 +1,57 @@
+/*------------------------------------*\
+	
+    SLICK DOTS
+    
+\*------------------------------------*/
+
+
+.slick-dots{
+	list-style: none;
+	
+	display: flex;
+	justify-content: center;
+	
+    margin-top: 60px;
+
+	li{
+		display: inline;
+		margin: 0 10px;
+
+		button{
+			width: 10px;
+			height: 10px;
+			padding: 10px 0;
+
+			border: 0 none;
+
+			font-size: 0;
+			
+			background: transparent;
+			
+			&:after {
+    			content: "";
+    			
+    			position: absolute;
+    			top: 11px;
+    			left: 0;
+    			
+    			height: 10px;
+    			width: 10px;
+    			
+    			border-radius: 50%;
+
+				background-color: transparent;
+				border: 1px solid #CDC7C0;
+			}
+		}
+
+		&.slick-active button,
+		button:hover {
+			
+			&:after {
+				background-color: $theme_color;
+				border: 1px solid $theme_color;
+			}
+		}
+	}
+}

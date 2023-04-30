@@ -1,0 +1,94 @@
+/*------------------------------------*\
+	
+    BASE - BUTTONS
+    
+\*------------------------------------*/
+
+
+$btn_font_size:			18px;
+//$btn_font_weight:		600;
+$btn_font_transform:	uppercase;
+$btn_font_align:		center;
+$btn_letter_space:		1px;
+$btn_color:				white;
+$btn_color_hover:		white;
+
+$btn_border:			2px solid $theme_color;
+//$btn_border_hover:		2px solid $theme_color;
+$btn_border_radius:		40px;
+
+$btn_background:		$theme_color;
+$btn_background_hover:	$theme_color2;
+
+$btn_min_width:			216px;
+$btn_min_width_mob:		190px;
+$btn_padding:			16px 35px;
+$btn_padding_mob:		10px 24px;
+//$btn_margin_top:		12px;
+
+
+
+@mixin dc_button() {
+	@extend %raleway;	
+	font-size: $btn_font_size !important;
+	//font-weight: $btn_font_weight !important;
+	letter-spacing: $btn_letter_space;
+	line-height: 20px;
+	text-transform: $btn_font_transform;
+	text-align: $btn_font_align;
+	color: $btn_color;
+
+	//border: $btn_border;
+	border-radius: $btn_border_radius;
+	background: $btn_background;
+
+    display: inline-block;
+	box-sizing: border-box;
+	min-width: $btn_min_width_mob;
+	width: auto;
+
+	padding: $btn_padding_mob;
+	//margin: $btn_margin_top 0 0 0;
+	
+	opacity: 1; //Kas
+	
+    &:hover {
+		background: $btn_background_hover;
+		//border-color: $btn_border_hover;
+		color: $btn_color_hover;
+    }
+    
+	&.black-btn {
+		color: $theme_color;
+		background: $black;
+		
+	    &:hover {
+		    color: $black;
+			background: $theme_color;
+	    }
+	}
+    		
+	@include mq('tablet', min) {
+		font-size: $btn_font_size !important;
+		padding: $btn_padding;
+		min-width: $btn_min_width;
+	}
+}
+
+a{
+	
+	&.dc-btn {
+	    @include dc_button();
+	    
+	    &.outline {
+		    color: $theme_color;
+		    border: $btn_border;
+		    background: transparent;
+		    
+		    &:hover {
+			    color: white;
+			    background: $theme_color;
+		    }
+	    }
+	}
+}
