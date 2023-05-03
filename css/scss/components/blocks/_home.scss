@@ -1,0 +1,33 @@
+.home-content {
+    height: 100%;
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        .image {
+            max-width: 679px;
+            width: 100%;
+        }
+
+        .content {
+            flex: 1;
+            font-weight: 500;
+            font-size: 18px;
+            color: #000;
+
+            h1 {
+                color: #494949;
+                font-weight: 700;
+                font-size: 40px;
+                text-transform: uppercase;
+
+                span {
+                    color: #009E61;
+                }
+            }
+        }
+    }
+}

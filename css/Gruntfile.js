@@ -15,7 +15,11 @@ module.exports = function(grunt) {
     	css: {
     		files: 'scss/**/*.scss',
     		tasks: ['sass', 'autoprefixer']
-    	}
+    	},
+      js: {
+        files: '../js/fragments/**/*.js',
+        tasks: ['uglify']
+      }
     },
     autoprefixer: {
       options: {
@@ -25,6 +29,34 @@ module.exports = function(grunt) {
         src: 'css/main.css',
         dest: 'theme.css'
       },
+    },
+    uglify: {
+      dist: {
+        options: {
+          banner: '/*! <%= pkg.name %> <%= pkg.version %> filename.min.js <%= grunt.template.today("yyyy-mm-dd h:MM:ss TT") %> */\n',
+          report: 'gzip'
+        },
+        files: {
+            '../js/scripts.min.js' : [
+            '../js/fragments/**/*.js',
+            '../js/fragments/ig_init.js'
+          ]
+        }
+      },
+      dev: {
+        options: {
+          banner: '/*! <%= pkg.name %> <%= pkg.version %> filename.js <%= grunt.template.today("yyyy-mm-dd h:MM:ss TT") %> */\n',
+          beautify: true,
+          compress: false,
+          mangle: false
+        },
+        files: {
+            '../js/scripts.js' : [
+            '../js/fragments/**/*.js',
+            '../js/fragments/ig_init.js'
+          ]
+        }
+      }
     }
   });
   grunt.loadNpmTasks('grunt-contrib-sass');

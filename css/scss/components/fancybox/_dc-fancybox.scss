@@ -4,20 +4,66 @@
     
 \*------------------------------------*/
 
+.fancybox__container {    
+    .fancybox__backdrop {
+		opacity: 1;
+		background: rgba(5, 20, 14, 0.9);;
+	}
 
-.compensate-for-scrollbar {
-	margin-right: auto !important;
-}
+	.client-content {
+		.f-button {
+			top: 10px !important;
+			background-color: #009E61 !important;
+			opacity: 1 !important;
+			border-radius: 5px;
+			right: 10px !important;
+		}
 
+		.content-inner {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
 
-.fancybox-container {
-    z-index: 100000;
-    
-    &.fancybox-is-open {
-	    
-	    .fancybox-bg {
-	        opacity: 1;
-			background: rgba(36, 62, 83, .96);
+			.content {
+				flex: 1;
+				text-align: center;
+				padding-top: 25px;
+				color: #000;
+				font-size: 16px;
+				padding-left: 30px;
+			}
+
+			.details {
+				text-align: center;
+				max-width: 300px;
+
+				.website {
+					color: #000;
+					font-weight: 700;
+					font-size: 13px;
+					margin-top: 5px;
+					margin-bottom: 16px;
+				}
+
+				.grid {
+					display: grid;
+					grid-template-columns: repeat(2 , 1fr);
+					gap: 10px;
+
+					.item {
+						display: flex;
+						flex-direction: column;
+						font-size: 13px;
+						line-height: 1.5;
+
+						.big {
+							color: #009E61;
+							font-weight: 800;
+							font-size: 37px;
+						}
+					}
+				}
+			}
 		}
 	}
 }

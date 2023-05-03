@@ -1,0 +1,90 @@
+.service-single {
+    .content-wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 40px;
+
+        .left {
+            width: 60%;
+
+            p {
+                margin: 0;
+                font-weight: 500;
+                font-size: 16px;
+                color: #000000;
+            }
+
+            h1 {
+                color: #494949;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 40px;
+                margin-bottom: 10px;
+
+                span {
+                    color: #009E61;
+                }
+            }
+        }
+
+        .right {
+            background: #F6FAF8;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        
+            width: 30%;
+            text-align: center;
+            padding: 10px;
+
+            p {
+                margin: 5px 0 0;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 15px;
+                color: #000000;
+            }
+        }
+
+        .full {
+            width: 100%;
+            margin-top: 30px;
+
+            ul {
+                padding: 0;
+                margin: 0;
+                display: grid;
+                grid-template-columns: repeat(2 , 1fr);
+                font-weight: 500;
+                font-size: 16px;
+                color: #000000;
+
+                li {
+                    margin-left: 0;
+                    list-style: none;
+                    padding-left: 25px;
+                    position: relative;
+
+                    &::before {
+                        position: absolute;
+                        width: 7px;
+                        height: 7px;
+                        left: 8px;
+                        top: 8px;
+                        background-color: #009E61;
+                        content: "";
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.white-label {
+    .content-wrap {
+        .right {
+            padding: 25px 10px;
+        }
+    }
+}

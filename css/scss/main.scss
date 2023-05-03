@@ -17,6 +17,9 @@
 @import 'fontawesome/brands.scss';
 @import 'fontawesome/thin.scss';
 
+@import 'slick/slick-theme.scss';
+@import 'slick/slick.scss';
+
 /* SETTINGS - GRID */
 @import "app/base/settings/_settings.widths";
 @import "app/base/settings/_settings.breakpoints";
@@ -40,9 +43,16 @@
 @import "app/base/_base.buttons";
 @import "app/base/_base.lists";
 @import "app/base/_base.images";
+@import "app/header/_header";
+@import "app/footer/_footer";
 
 /* COMPONENTS */
 @import "components/_section";
+@import "components/blocks/_home";
+@import "components/blocks/_client-carousal";
+@import "components/blocks/_service-carousal";
+@import "components/blocks/_service-single";
+@import "components/blocks/_contact";
 
 /* SLICK SLIDER */
 @import "components/slick/_slick.dots";

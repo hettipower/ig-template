@@ -1,6 +1,9 @@
 /*------------------------------------*\
     GLOBAL - SITE WIDE
 \*------------------------------------*/
+body {
+    @extend %raleway;
+}
 
 button {
     outline: none !important;
@@ -21,4 +24,8 @@ input[type=submit] {
 .page_container > .panel{
     max-width: 100%;
     background: $content_bg_color;
+}
+
+* {
+    box-sizing: border-box;
 }

@@ -9,9 +9,18 @@ ARTICLE SECTION
 $section_spacing: 130px;
 $section_spacing_mob: 70px;
 
+.page-container {
+	height: calc(100vh - (163px + 73px));
+	overflow: auto;
+}
+
 
 .section {
-	&.woocommerce-breadcrumb {
+	&.home-content , 
+	&.clients-content , 
+	&.services-content , 
+	&.service-single , 
+	&.contact-wrap {
 
 
 		// DEFAULT SECTION STYLES + WIDTHS
@@ -45,27 +54,10 @@ $section_spacing_mob: 70px;
 		}
 
 
-		// SECTION SPACING TOP & BOTTOM
-		padding-top: $section_spacing_mob;
-		padding-bottom: $section_spacing_mob;
-
 		@include mq('tablet', min) {
-			padding-top: $section_spacing - 30px;
-			padding-bottom: $section_spacing - 30px;
 		}
 
 		@include mq('950', min) {
-			padding-top: $section_spacing;
-			padding-bottom: $section_spacing;
-		}
-
-		&.bg_white+.bg_white,
-		&.bg_white+script+.bg_white,
-		&.bg_grey+.bg_grey,
-		&.bg_grey+script+.bg_grey,
-		&.bg_blue+.bg_blue,
-		&.bg_blue+script+.bg_blue {
-			padding-top: 0;
 		}
 	}
 }
