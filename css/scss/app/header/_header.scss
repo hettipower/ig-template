@@ -39,7 +39,7 @@ header {
 
         .navigation {
             display: flex;
-            margin: 0;
+            margin: -60px 0 0;
             padding: 0 0;
             list-style: none;
 
@@ -114,6 +114,7 @@ header {
                 text-align: center;
                 background-color: #fff;
                 z-index: 10;
+                margin: 0;
             }
         }
     }
