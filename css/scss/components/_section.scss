@@ -12,6 +12,98 @@ $section_spacing_mob: 70px;
 .page-container {
 	height: calc(100vh - (163px + 73px));
 	overflow: auto;
+
+	@include mq('1000', max) {
+		height: 70vh;
+	}
+
+	@include mq('phablet', max) {
+		height: calc(100vh - (163px + 73px));
+	}
+
+	&.white-label-container , &.service-container , &.contact-container {
+		@include mq('1000', max) {
+			height: auto;
+			padding: 2rem 0;
+		}
+
+		.inner {
+			position: relative;
+
+			button.page-arrow {
+				position: absolute;
+				top: calc(50% - 21px);
+				width: 34px;
+				height: 34px;
+				display: flex !important;
+				align-items: center;
+				justify-content: center;
+				z-index: 1;
+				font-size: 0;
+				background-color: #009E61;
+				border: 0;
+				border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				-ms-border-radius: 5px;
+				-o-border-radius: 5px;
+			
+				@include mq('1000', max) {
+					top: 50%;
+				}
+			
+				&:after {
+					@include pseudo;
+					@include fa-icon;
+					@extend .far;
+					
+					position: relative;
+			
+					font-size: 20px;
+			
+					vertical-align: 0;
+					
+					@include effect(all, 250ms, ease-in-out);
+					
+					color: #fff;
+					font-weight: 800;
+				}
+			
+				&::before {
+					display: none !important;
+				}
+				
+				&.page-prev {
+					left: 15px;
+			
+					@include mq('1000', max) {
+						left: 10px;
+					}
+					
+					&:after {
+						content: fa-content($fa-var-chevron-left);
+					}
+				}
+				
+				&.page-next {
+					right: 15px;
+			
+					@include mq('1000', max) {
+						right: 10px;
+					}
+					
+					&:after {
+						content: fa-content($fa-var-chevron-right);
+					}
+									
+				}
+				
+				&:hover , &:focus {
+					background-color: #009E61;
+				}
+			}
+		}
+	}
 }
 
 
@@ -22,12 +114,15 @@ $section_spacing_mob: 70px;
 	&.service-single , 
 	&.contact-wrap {
 
-
 		// DEFAULT SECTION STYLES + WIDTHS
 		position: relative;
 
 		background-size: cover;
 		background-repeat: no-repeat;
+		height: 100%;
+
+		display: flex;
+		align-items: center;
 
 		>.inner {
 			@include dc_max_width($default_padding, $default_padding);

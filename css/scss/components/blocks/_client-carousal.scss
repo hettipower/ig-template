@@ -1,13 +1,26 @@
 .client-carousel {
+
+    @include mq('1000', max) {
+        margin: 0 20px;
+    }
+
     .item {
+
         a {
             border: 1px solid rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 296px;
             height: 183px;
             background-color:  #F4F4F4;
+
+            @include mq('1000', max) {
+                margin: 0 10px;
+            }
+
+            @include mq('phablet', max) {
+                margin: 0;
+            }
         }
 
         .itemInner {

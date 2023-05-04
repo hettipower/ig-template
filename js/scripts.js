@@ -1,4 +1,4 @@
-/*! css 1.0.0 filename.js 2023-05-03 11:54:03 PM */
+/*! css 1.0.0 filename.js 2023-05-04 12:37:49 PM */
 
 jQuery(document).ready(function($) {
     Fancybox.bind("[data-fancybox]", {});
@@ -9,10 +9,10 @@ jQuery(document).ready(function($) {
         slidesToShow: 1,
         slidesToScroll: 1,
         responsive: [ {
-            breakpoint: 1024,
+            breakpoint: 1e3,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
+                slidesToShow: 3,
+                slidesToScroll: 3,
                 infinite: true
             }
         }, {
@@ -36,10 +36,10 @@ jQuery(document).ready(function($) {
         slidesToShow: 1,
         slidesToScroll: 1,
         responsive: [ {
-            breakpoint: 1024,
+            breakpoint: 1e3,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
+                slidesToShow: 3,
+                slidesToScroll: 3,
                 infinite: true
             }
         }, {
@@ -55,6 +55,9 @@ jQuery(document).ready(function($) {
                 slidesToScroll: 1
             }
         } ]
+    });
+    $(".navigationToggler").on("click", function() {
+        $(this).parent().toggleClass("open-menu");
     });
 });
 

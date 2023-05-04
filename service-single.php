@@ -5,9 +5,11 @@
     $detect = new \Detection\MobileDetect;
 ?>
 
-<div class="page-container">
+<div class="page-container service-container">
     <section class="section service-single">
         <div class="inner">
+
+            <button class="page-prev page-arrow" aria-label="Previous" type="button" style="">Previous</button>
 
             <div class="content-wrap">
                 <div class="left">
@@ -33,6 +35,8 @@
                     </ul>
                 </div>
             </div>
+
+            <button class="page-next page-arrow" aria-label="Next" type="button" style="">Next</button>
 
         </div>
     </section>

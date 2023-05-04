@@ -5,7 +5,7 @@
     $detect = new \Detection\MobileDetect;
 ?>
 
-<div class="page-container">
+<div class="page-container contact-container">
     <section class="section contact-wrap">
         <div class="inner">
 

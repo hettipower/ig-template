@@ -5,7 +5,7 @@
     $detect = new \Detection\MobileDetect;
 ?>
 
-<div class="page-container">
+<div class="page-container white-label-container">
     <section class="section service-single white-label">
         <div class="inner">
 

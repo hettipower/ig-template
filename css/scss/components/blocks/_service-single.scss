@@ -8,6 +8,11 @@
         .left {
             width: 60%;
 
+            @include mq('tablet', max) {
+                width: 100%;
+                order: 2;
+			}
+
             p {
                 margin: 0;
                 font-weight: 500;
@@ -37,6 +42,12 @@
             text-align: center;
             padding: 10px;
 
+            @include mq('tablet', max) {
+                width: 100%;
+                order: 1;
+                margin-bottom: 20px;
+			}
+
             p {
                 margin: 5px 0 0;
                 text-transform: uppercase;
@@ -50,6 +61,10 @@
             width: 100%;
             margin-top: 30px;
 
+            @include mq('tablet', max) {
+                order: 3;
+			}
+
             ul {
                 padding: 0;
                 margin: 0;
@@ -58,6 +73,10 @@
                 font-weight: 500;
                 font-size: 16px;
                 color: #000000;
+
+                @include mq('tablet', max) {
+                    grid-template-columns: repeat(1 , 1fr);
+                }
 
                 li {
                     margin-left: 0;

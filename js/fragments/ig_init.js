@@ -12,10 +12,10 @@ jQuery(document).ready(function ($) {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1000,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           infinite: true,
         }
       },
@@ -44,10 +44,10 @@ jQuery(document).ready(function ($) {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1000,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           infinite: true,
         }
       },
@@ -66,6 +66,10 @@ jQuery(document).ready(function ($) {
         }
       }
     ]
+  });
+
+  $('.navigationToggler').on('click' , function(){
+    $(this).parent().toggleClass('open-menu');
   });
 
 });

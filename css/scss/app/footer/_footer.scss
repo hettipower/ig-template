@@ -18,9 +18,26 @@ footer {
             padding-right: 60px;
         }
 
+        @include mq('tablet', max) {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            padding: 10px 10px;
+        }
+
         .logos {
+
+            @include mq('tablet', max) {
+                margin-bottom: 20px;
+            }
+
             img {
                 margin-right: 25px;
+
+                @include mq('tablet', max) {
+                    margin-right: 10px;
+                    max-width: 100px;
+                }
             }
         }
 
