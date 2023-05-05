@@ -2,46 +2,62 @@
     height: 100%;
 
     .inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         height: 100%;
 
         padding-left: 95px !important;
 
         @include mq('1000', max) {
-            flex-wrap: wrap;
-            justify-content: center;
             padding-left: 30px !important;
+            padding-right: 30px !important;
         }
 
-        .image {
-            max-width: 679px;
-            width: 100%;
-        }
+        .main-slider {
 
-        .content {
-            flex: 1;
-            font-weight: 500;
-            font-size: 18px;
-            color: #000;
+            @include mq('1000', max) {
+                padding: 0 15px;
+            }
 
-            h1 {
-                color: #494949;
-                font-weight: 700;
-                font-size: 40px;
-                text-transform: uppercase;
+            .item {
+                .item-inner {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
 
-                @include mq('tablet', max) {
-                    font-size: 30px;
-                }
+                    @include mq('1000', max) {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
 
-                @include mq('phone', max) {
-                    font-size: 25px;
-                }
-
-                span {
-                    color: #009E61;
+                    .image {
+                        max-width: 679px;
+                        width: 100%;
+                    }
+            
+                    .content {
+                        flex: 1;
+                        font-weight: 500;
+                        font-size: 18px;
+                        color: #000;
+            
+                        h1 {
+                            color: #494949;
+                            font-weight: 700;
+                            font-size: 40px;
+                            text-transform: uppercase;
+            
+                            @include mq('tablet', max) {
+                                font-size: 30px;
+                            }
+            
+                            @include mq('phone', max) {
+                                font-size: 25px;
+                            }
+            
+                            span {
+                                color: #009E61;
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -1,4 +1,4 @@
-/*! css 1.0.0 filename.js 2023-05-04 12:37:49 PM */
+/*! css 1.0.0 filename.js 2023-05-06 12:27:03 AM */
 
 jQuery(document).ready(function($) {
     Fancybox.bind("[data-fancybox]", {});
@@ -58,6 +58,13 @@ jQuery(document).ready(function($) {
     });
     $(".navigationToggler").on("click", function() {
         $(this).parent().toggleClass("open-menu");
+    });
+    $(".main-slider").slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1
     });
 });
 
