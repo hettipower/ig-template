@@ -5,12 +5,28 @@
         flex-wrap: wrap;
         padding: 0 40px;
 
+        h1 {
+            color: #494949;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 40px;
+            margin-bottom: 10px;
+
+            span {
+                color: #009E61;
+            }
+        }
+
         .left {
             width: 60%;
 
             @include mq('tablet', max) {
                 width: 100%;
                 order: 2;
+
+                h1 {
+                    display: none;
+                }
 			}
 
             p {
@@ -18,18 +34,6 @@
                 font-weight: 500;
                 font-size: 16px;
                 color: #000000;
-            }
-
-            h1 {
-                color: #494949;
-                text-transform: uppercase;
-                font-weight: 700;
-                font-size: 40px;
-                margin-bottom: 10px;
-
-                span {
-                    color: #009E61;
-                }
             }
         }
 
@@ -59,7 +63,7 @@
 
         .full {
             width: 100%;
-            margin-top: 30px;
+            margin-top: 50px;
 
             @include mq('tablet', max) {
                 order: 3;

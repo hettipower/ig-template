@@ -5,12 +5,12 @@
     $detect = new \Detection\MobileDetect;
 ?>
 
-<div class="page-container">
+<div class="page-container services-container">
     <section class="section services-content">
         <div class="inner">
 
-            <div class="service-carousel <?php echo (!$detect->isMobile() || !$detect->isTablet()) ? 'pc-carousel' : '' ; ?>">
-                <?php if( $detect->isMobile() || $detect->isTablet() ): ?>
+            <?php if( $detect->isMobile() || $detect->isTablet() ): ?>
+                <div class="grid services-grid">
                     <div class="item">
                         <a href="service-single.php">
                             <img src="images/services/1.png" alt="">
@@ -59,7 +59,9 @@
                             <p>MOBILE APPS</p>
                         </a>
                     </div>
-                <?php else: ?>
+                </div>
+            <?php else: ?>
+                <div class="service-carousel">
                     <div class="item">
                         <div class="itemInner">
                             <a href="service-single.php">
@@ -132,8 +134,8 @@
                             </a>
                         </div>
                     </div>
-                <?php endif; ?>
-            </div>
+                </div>
+            <?php endif; ?>     
 
         </div>
     </section>

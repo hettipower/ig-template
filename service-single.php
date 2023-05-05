@@ -9,11 +9,16 @@
     <section class="section service-single">
         <div class="inner">
 
-            <button class="page-prev page-arrow" aria-label="Previous" type="button" style="">Previous</button>
-
             <div class="content-wrap">
-                <div class="left">
+
+                <?php if( $detect->isMobile() || $detect->isTablet() ): ?>
                     <h1>GOOGLE <span>SEO</span></h1>
+                <?php endif; ?>
+
+                <div class="left">
+                    <?php if( !$detect->isMobile() || !$detect->isTablet() ): ?>
+                        <h1>GOOGLE <span>SEO</span></h1>
+                    <?php endif; ?>
                     <p>Our team of seasoned SEO experts understand Google and acknowledge the rewards of a website ranking in top positions on Google. iCONQUER offers strategic Google SEO services to ensure that your website ranks on page one for your targeted key phrases.</p>
                 </div>
                 <div class="right">
@@ -35,8 +40,6 @@
                     </ul>
                 </div>
             </div>
-
-            <button class="page-next page-arrow" aria-label="Next" type="button" style="">Next</button>
 
         </div>
     </section>

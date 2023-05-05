@@ -21,7 +21,11 @@ $section_spacing_mob: 70px;
 		height: calc(100vh - (163px + 73px));
 	}
 
-	&.white-label-container , &.service-container , &.contact-container {
+	&.white-label-container , 
+	&.service-container , 
+	&.contact-container ,
+	&.client-container , 
+	&.services-container {
 		@include mq('1000', max) {
 			height: auto;
 			padding: 2rem 0;

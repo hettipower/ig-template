@@ -18,6 +18,7 @@ header {
 
         .logo {
             display: flex;
+            position: relative;
 
             .text {
                 font-weight: 700;
@@ -34,6 +35,15 @@ header {
                 @include mq('tablet-wide', max) {
                     width: 100px;
                 }
+            }
+
+            a {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 10;
             }
         }
 
@@ -64,6 +74,15 @@ header {
                         border-radius: 50px;
                         padding: 10px 30px;
                         color: #fff;
+                        transition: 0.5s all ease;
+                        -webkit-transition: 0.5s all ease;
+                        -moz-transition: 0.5s all ease;
+                        -ms-transition: 0.5s all ease;
+                        -o-transition: 0.5s all ease;
+
+                        &:hover{
+                            background-color: #000;
+                        }
                     }
                 }
             }
@@ -115,6 +134,11 @@ header {
                 background-color: #fff;
                 z-index: 10;
                 margin: 0;
+                padding-bottom: 10px;
+
+                li {
+                    margin: 0;
+                }
             }
         }
     }

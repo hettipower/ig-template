@@ -33,6 +33,25 @@
                         </li>
                     </ul>
 
+                    <ul class="contact">
+                        <li>
+                            <span class="icon">
+                                <img src="./images/address.png" alt="">
+                            </span>
+                            iCONQUER <br/>
+                            Blackburn Technology Management Centre <br/>
+                            Challenge Way <br/>
+                            Blackburn <br/>
+                            BB1 5QB
+                        </li>
+                        <li>
+                            <span class="icon">
+                                <img src="./images/whatsapp.png" alt="">
+                            </span>
+                            24-7 SUPPORT
+                        </li>
+                    </ul>
+
                     <ul class="social">
                         <li>
                             <a href="#">
@@ -58,25 +77,6 @@
                             <a href="#">
                                 <img src="./images/pint.png" alt="">
                             </a>
-                        </li>
-                    </ul>
-
-                    <ul class="contact">
-                        <li>
-                            <span class="icon">
-                                <img src="./images/address.png" alt="">
-                            </span>
-                            iCONQUER <br/>
-                            Blackburn Technology Management Centre <br/>
-                            Challenge Way <br/>
-                            Blackburn <br/>
-                            BB1 5QB
-                        </li>
-                        <li>
-                            <span class="icon">
-                                <img src="./images/whatsapp.png" alt="">
-                            </span>
-                            24-7 SUPPORT
                         </li>
                     </ul>
 

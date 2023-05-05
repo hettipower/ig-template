@@ -20,6 +20,7 @@
     <header>
         <nav>
             <div class="logo">
+                <a href="index.php"></a>
                 <div class="img">
                     <img src="./images/logo 1.png" alt="logo">
                 </div>

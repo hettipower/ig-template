@@ -7,9 +7,12 @@
         align-items: center;
         height: 100%;
 
+        padding-left: 95px !important;
+
         @include mq('1000', max) {
             flex-wrap: wrap;
             justify-content: center;
+            padding-left: 30px !important;
         }
 
         .image {
