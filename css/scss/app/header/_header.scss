@@ -22,18 +22,38 @@ header {
 
             .text {
                 font-weight: 700;
-                font-size: 16px;
+                font-size: 13px;
                 color: #000;
                 margin-top: 28px;
 
-                span {
-                    color: #009E61;
+                @include mq('tablet-wide', max) {
+                    margin-top: 17px;
+                }
+
+                @include mq('phone', max) {
+                    font-size: 12px;
+                }
+
+                p {
+                    margin: 0;
+
+                    &.first {
+                        font-size: 16px;
+
+                        @include mq('phone', max) {
+                            font-size: 12px;
+                        }
+                    }
+
+                    span {
+                        color: #009E61;
+                    }
                 }
             }
 
             .img {
                 @include mq('tablet-wide', max) {
-                    width: 100px;
+                    width: 85px;
                 }
             }
 
@@ -80,6 +100,8 @@ header {
                         -ms-transition: 0.5s all ease;
                         -o-transition: 0.5s all ease;
 
+                        animation: blinking 1s infinite;
+
                         &:hover{
                             background-color: #000;
                         }
@@ -93,8 +115,8 @@ header {
 
             @include mq('tablet-wide', max) {
                 display: flex;
-                background-color: #009E61;
-                color: #fff;
+                background-color: transparent;
+                color: #009E61;
                 cursor: pointer;
                 padding: 7px 13px;
                 border-radius: 5px;
@@ -102,6 +124,8 @@ header {
                 height: 33px;
                 align-items: center;
                 justify-content: center;
+
+                border: 1px solid #009E61;
             
                 .fa-times {
                     display: none;
@@ -113,7 +137,6 @@ header {
             flex-wrap: wrap;
 
             .navigationToggler {
-                background-color: #000000;
 
                 .fa-times {
                     display: block;

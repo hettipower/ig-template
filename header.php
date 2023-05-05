@@ -24,7 +24,10 @@
                 <div class="img">
                     <img src="./images/logo 1.png" alt="logo">
                 </div>
-                <div class="text">iCONQUER <span>Est. 2004</span></div>
+                <div class="text">
+                    <p class="first">Your Digital Marketing <span>Partner</span></p>
+                    <p>iCONQUER <span>Est. 2004</span></p>
+                </div>
             </div>
 
             <div class="navigationToggler">

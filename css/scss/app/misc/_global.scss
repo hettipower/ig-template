@@ -34,3 +34,12 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+@keyframes blinking {
+    0% {
+        background-color: #009e61;
+    }
+    100% {
+        background-color: #000;
+    }
+}

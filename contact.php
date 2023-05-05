@@ -14,34 +14,26 @@
                     
                     <ul class="contact">
                         <li>
-                            <span class="icon">
-                                <img src="./images/mail.png" alt="">
-                            </span>
+                            <span class="icon"><i class="fas fa-envelope"></i></span>
                             info@iconquer.com
                         </li>
                         <li>
-                            <span class="icon">
-                                <img src="./images/tel.png" alt="">
-                            </span>
+                            <span class="icon"><i class="fas fa-phone-alt"></i></span>
                             01254 933 515
                         </li>
                         <li>
-                            <span class="icon">
-                                <img src="./images/tel.png" alt="">
-                            </span>
+                            <span class="icon"><i class="fas fa-phone-alt"></i></span>
                             0333 2346 423
                         </li>
                     </ul>
 
                     <ul class="contact">
                         <li>
-                            <span class="icon">
-                                <img src="./images/address.png" alt="">
-                            </span>
+                            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
                             iCONQUER <br/>
                             Blackburn Technology Management Centre <br/>
                             Challenge Way <br/>
-                            Blackburn <br/>
+                            Blackburn , Lancashire<br/>
                             BB1 5QB
                         </li>
                         <li>
@@ -54,46 +46,38 @@
 
                     <ul class="social">
                         <li>
-                            <a href="#">
-                                <img src="./images/linkedin.png" alt="">
-                            </a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         </li>
                         <li>
-                            <a href="#">
-                                <img src="./images/facebook.png" alt="">
-                            </a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
                         </li>
                         <li>
-                            <a href="#">
-                                <img src="./images/twitter.png" alt="">
-                            </a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a href="#">
-                                <img src="./images/instagram.png" alt="">
-                            </a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
                         </li>
                         <li>
-                            <a href="#">
-                                <img src="./images/pint.png" alt="">
-                            </a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
                         </li>
                     </ul>
 
                 </div>
                 <div class="form">
 
+                    <h2>Get in Touch</h2>
+
                     <form action="">
                         <div class="form-group">
-                            <label for="">Name</label>
+                            <label for="">Name <span class="required">*</span></label>
                             <input type="text" class="form-control" placeholder="Name">
                         </div>
                         <div class="form-group">
-                            <label for="">Email Address</label>
+                            <label for="">Email Address <span class="required">*</span></label>
                             <input type="text" class="form-control" placeholder="Email Address">
                         </div>
                         <div class="form-group">
-                            <label for="">Phone Number</label>
+                            <label for="">Phone Number <span class="required">*</span></label>
                             <input type="text" class="form-control" placeholder="Phone Number">
                         </div>
                         <div class="form-group">

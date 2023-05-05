@@ -36,6 +36,10 @@
                     font-size: 30px;
                 }
 
+                @include mq('phone', max) {
+                    font-size: 25px;
+                }
+
                 span {
                     color: #009E61;
                 }

@@ -1,6 +1,12 @@
 footer {
     width: 100%;
     background-color: #EFEFEF; 
+
+    @include mq('1000', max) {
+        position: sticky;
+        bottom: 0;
+        z-index: 1000;
+    }
   
     .container {
         
@@ -18,9 +24,6 @@ footer {
         }
 
         @include mq('tablet', max) {
-            flex-wrap: wrap;
-            justify-content: center;
-            text-align: center;
             padding: 10px 10px;
         }
 
@@ -36,6 +39,16 @@ footer {
                 @include mq('tablet', max) {
                     margin-right: 10px;
                     max-width: 100px;
+
+                    &.google-review {
+                        display: none;
+                    }
+                }
+
+                @include mq('phone', max) {
+                    &:nth-child(1) {
+                        display: none;
+                    }
                 }
             }
         }
@@ -64,6 +77,8 @@ footer {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
+                    animation: blinking 1s infinite;
 
                     &:hover{
                         background-color: #000;

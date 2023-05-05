@@ -1,13 +1,15 @@
 .contact-wrap {
     padding-bottom: 20px;
+    display: block !important;
     
     .content-wrap {
         display: flex;
         justify-content: space-between;
-        padding: 0 40px;
+        padding: 0 40px 20px;
 
         @include mq('tablet', max) {
             flex-wrap: wrap;
+            padding: 0 0 20px;
         }
 
         .details {
@@ -15,6 +17,8 @@
 
             @include mq('tablet', max) {
                 width: 100%;
+                order: 2;
+                margin-top: 40px;
 			}
 
             .contact {
@@ -31,8 +35,14 @@
                     margin-bottom: 12px;
                     padding-bottom: 0;
 
+                    @include mq('tablet', max) {
+                        margin-left: 0;
+                    }
+
                     .icon {
                         margin-right: 14px;
+                        color: #009e61;
+                        font-size: 20px;
                     }
                 }
             }
@@ -43,10 +53,38 @@
                 list-style: none;
                 display: flex;
 
+                @include mq('tablet', max) {
+                    margin-left: 0;
+                }
+
                 li {
                     margin-right: 15px;
                     padding: 0;
                     margin-left: 0;
+
+                    a {
+                        color: #fff;
+                        background-color: #009e61;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 100%;
+                        font-size: 30px;
+
+                        @include mq('1000', max) {
+                            width: 50px;
+                            height: 50px;
+                            font-size: 24px;
+                        }
+
+                        @include mq('tablet', max) {
+                            width: 50px;
+                            height: 50px;
+                            font-size: 24px;
+                        }
+                    }
                 }
             }
         }
@@ -56,8 +94,12 @@
 
             @include mq('tablet', max) {
                 width: 100%;
-                margin-top: 20px;
+                order: 1;
 			}
+
+            h2 {
+                font-size: 26px;
+            }
 
             .form-group {
                 margin-bottom: 15px;
@@ -69,6 +111,10 @@
                     font-size: 15px;
                     font-weight: 400;
                     margin-bottom: 5px;
+
+                    .required {
+                        color: #f00;
+                    }
                 }
 
                 .form-control {
