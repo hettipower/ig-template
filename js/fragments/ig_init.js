@@ -80,4 +80,16 @@ jQuery(document).ready(function ($) {
     slidesToScroll: 1,
   });
 
+  $('header nav .navigation li.has-submenu .icon').on('click' , function(){
+    $(this).parent().toggleClass('open-submenu');
+  });
+
+  var firstVisit = localStorage.getItem('firstVisit');
+  if (firstVisit == null) {
+    localStorage.setItem('firstVisit', 1);
+
+    // Show popup here
+    Fancybox.show([{ src: "#popup-form", type: "inline" }]);
+  }
+
 });

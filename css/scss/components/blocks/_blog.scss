@@ -1,0 +1,236 @@
+.blog-container {
+    .blog-section {
+        padding: 0 0 20px;
+
+        .inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .title-wrap {
+                width: 100%;
+                text-align: center;
+
+                h1 {
+                    color: #494949;
+                    font-weight: 700;
+                    font-size: 40px;
+                    text-transform: uppercase;
+                    margin-bottom: 35px;
+    
+                    @include mq('tablet', max) {
+                        font-size: 30px;
+                    }
+    
+                    @include mq('phone', max) {
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            .blog-wrap {
+                width: 73%;
+
+                @include mq('tablet', max) {
+                    width: 100%;
+                }
+
+                .blog-item {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    margin-bottom: 30px;
+
+                    .image {
+                        width: 45%;
+                        position: relative;
+                        margin-bottom: auto;
+
+                        @include mq('tablet', max) {
+                            width: 100%;
+                        }
+
+                        .time {
+                            display: flex;
+                            flex-direction: column;
+                            color: #fff !important;
+                            font-size: 14px !important;
+                            width: 70px;
+                            text-align: center;
+                            padding: 5px;
+                            text-transform: uppercase;
+                            background: $green;
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            -webkit-transform: translateY(-50%);
+                            -moz-transform: translateY(-50%);
+                            -ms-transform: translateY(-50%);
+                            transform: translateY(-50%);
+                        }
+                    }
+
+                    .content {
+                        width: 55%;
+                        padding-left: 30px;
+                        color: #858585;
+
+                        @include mq('tablet', max) {
+                            width: 100%;
+                            padding-left: 0;
+                        }
+
+                        h3 {
+                            font-size: 20px;
+
+                            a {
+                                color: $green;
+                            }
+                        }
+
+                        .meta {
+                            position: relative;
+                            padding-left: 20px;
+                            color: #858585;
+
+                            &::before {
+                                @include pseudo;
+                                @include fa-icon;
+                                @extend .fas;
+
+                                content: fa-content($fa-var-folder);
+
+                                position: absolute;
+                                font-weight: 600;
+
+                                left: 0;
+                                top: 0;
+                            }
+                        }
+
+                        a {
+                            color: $green;
+                        }
+                    }
+                }
+
+                &.blog-single-wrap {
+                    color: #606060;
+                    font-size: 15px;
+
+                    h1 {
+                        font-size: 36px;
+                        color: $green;
+                        margin-bottom: 30px;
+
+                        @include mq('tablet', max) {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .image {
+                        width: 100%;
+                        position: relative;
+                        margin-bottom: 20px;
+
+                        .time {
+                            display: flex;
+                            flex-direction: column;
+                            color: #fff !important;
+                            font-size: 14px !important;
+                            width: 70px;
+                            text-align: center;
+                            padding: 5px;
+                            text-transform: uppercase;
+                            background: $green;
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            -webkit-transform: translateY(-50%);
+                            -moz-transform: translateY(-50%);
+                            -ms-transform: translateY(-50%);
+                            transform: translateY(-50%);
+                        }
+                    }
+
+                    a {
+                        color: $green;
+                    }
+
+                    ul {
+                        padding: 0;
+                        margin: 0 0 0 10px;
+                        list-style: none;
+                        
+                        li {
+                            margin: 0 0 10px;
+                        }
+                    }
+                }
+            }
+
+            .sidebar-wrap {
+                width: 27%;
+                padding-left: 30px;
+
+                @include mq('tablet', max) {
+                    width: 100%;
+                    padding-left: 0;
+                    margin-top: 30px;
+                }
+
+                .sidebar-item {
+                    margin-bottom: 30px;
+
+                    .sidebar-title {
+                        font-size: 22px;
+                        color: $green;
+                        margin-bottom: 20px;
+                    }
+
+                    .sidebar-item {
+                        padding: 0;
+                        list-style: none;
+                        margin: 0;
+
+                        li {
+                            position: relative;
+                            margin: 0;
+                            padding-left: 14px;
+                            font-size: 14px;
+
+                            &::before {
+                                @include pseudo;
+                                @include fa-icon;
+                                @extend .far;
+
+                                position: absolute;
+
+                                content: fa-content($fa-var-chevron-right);
+                                top: 6px;
+                                left: 0;
+                                font-size: 11px;
+                                color: #606060;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    color: $green;
+                                }
+                            }
+
+                            a {
+                                color: #606060;
+
+                                &:hover {
+                                    color: $green;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

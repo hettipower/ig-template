@@ -1,4 +1,4 @@
-/*! css 1.0.0 filename.js 2023-05-06 12:27:03 AM */
+/*! css 1.0.0 filename.js 2023-05-07 9:36:29 PM */
 
 jQuery(document).ready(function($) {
     Fancybox.bind("[data-fancybox]", {});
@@ -66,6 +66,17 @@ jQuery(document).ready(function($) {
         slidesToShow: 1,
         slidesToScroll: 1
     });
+    $("header nav .navigation li.has-submenu .icon").on("click", function() {
+        $(this).parent().toggleClass("open-submenu");
+    });
+    var firstVisit = localStorage.getItem("firstVisit");
+    if (firstVisit == null) {
+        localStorage.setItem("firstVisit", 1);
+        Fancybox.show([ {
+            src: "#popup-form",
+            type: "inline"
+        } ]);
+    }
 });
 
 !function(i) {

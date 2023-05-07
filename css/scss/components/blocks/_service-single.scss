@@ -13,11 +13,12 @@
             margin-bottom: 10px;
 
             @include mq('phone', max) {
-                font-size: 35px;
+                font-size: 25px;
+                text-align: center;
             }
 
             span {
-                color: #009E61;
+                color: $green;
             }
         }
 
@@ -49,6 +50,13 @@
             width: 33%;
             text-align: center;
             padding: 10px;
+            
+            min-height: 200px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
 
             @include mq('tablet', max) {
                 width: 100%;
@@ -98,7 +106,7 @@
                         height: 7px;
                         left: 8px;
                         top: 8px;
-                        background-color: #009E61;
+                        background-color: $green;
                         content: "";
                         border-radius: 100%;
                     }

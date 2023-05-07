@@ -15,7 +15,7 @@ button.slick-arrow {
 	justify-content: center;
 	z-index: 1;
 	font-size: 0;
-	background-color: #009E61;
+	background-color: $green;
 	border: 0;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -74,7 +74,7 @@ button.slick-arrow {
 	}
 	
 	&:hover , &:focus {
-		background-color: #009E61;
+		background-color: $green;
 	}
 }
 

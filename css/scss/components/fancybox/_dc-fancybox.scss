@@ -10,10 +10,20 @@
 		background: rgba(5, 20, 14, 0.9);;
 	}
 
+	.site-popup-form {
+		.f-button {
+			top: 10px !important;
+			background-color: $green !important;
+			opacity: 1 !important;
+			border-radius: 5px;
+			right: 10px !important;
+		}
+	}
+
 	.client-content {
 		.f-button {
 			top: 10px !important;
-			background-color: #009E61 !important;
+			background-color: $green !important;
 			opacity: 1 !important;
 			border-radius: 5px;
 			right: 10px !important;
@@ -37,7 +47,7 @@
 				}
 
 				strong {
-					color: #009E61;
+					color: $green;
 				}
 			}
 
@@ -65,7 +75,7 @@
 						line-height: 1.5;
 
 						.big {
-							color: #009E61;
+							color: $green;
 							font-weight: 800;
 							font-size: 37px;
 						}

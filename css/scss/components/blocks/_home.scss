@@ -13,6 +13,8 @@
 
         .main-slider {
 
+            padding: 0 20px;
+
             @include mq('1000', max) {
                 padding: 0 15px;
             }
@@ -38,23 +40,29 @@
                         font-weight: 500;
                         font-size: 18px;
                         color: #000;
+
+                        @include mq('phone', max) {
+                            text-align: center;
+                        }
             
                         h1 {
                             color: #494949;
                             font-weight: 700;
                             font-size: 40px;
                             text-transform: uppercase;
+                            margin-bottom: 35px;
             
                             @include mq('tablet', max) {
                                 font-size: 30px;
                             }
             
                             @include mq('phone', max) {
-                                font-size: 25px;
+                                font-size: 22px;
+                                text-align: center;
                             }
             
                             span {
-                                color: #009E61;
+                                color: $green;
                             }
                         }
                     }

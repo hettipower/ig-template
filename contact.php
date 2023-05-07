@@ -5,6 +5,8 @@
     $detect = new \Detection\MobileDetect;
 ?>
 
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
 <div class="page-container contact-container">
     <section class="section contact-wrap">
         <div class="inner">
@@ -88,6 +90,9 @@
                             <label for="">Tell us more</label>
                             <textarea class="form-control" placeholder="Tell us more"></textarea>
                         </div>
+
+                        <div class="g-recaptcha" data-sitekey="6LdDvJEUAAAAANqme8lbtXFwhxlAjc1ZOjYJyarO" data-callback="onSubmit"></div>
+
                         <div class="btn-group">
                             <input type="submit" class="btn" value="SUBMIT">
                         </div>

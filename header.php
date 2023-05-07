@@ -39,8 +39,19 @@
                 <li>
                     <a href="index.php">Home</a>
                 </li>
-                <li>
+                <li class="has-submenu">
                     <a href="services.php">SERVICES</a>
+                    <ul class="sub-menu">
+                        <li><a href="service-single.php">GOOGLE SEO</a></li>
+                        <li><a href="service-single.php">WEB DESIGN</a></li>
+                        <li><a href="service-single.php">PPC MARKETING</a></li>
+                        <li><a href="service-single.php">Content Writing</a></li>
+                        <li><a href="service-single.php">WEB DEVELOPMENT</a></li>
+                        <li><a href="service-single.php">SOCIAL MEDIA</a></li>
+                        <li><a href="service-single.php">Domains & Hosting</a></li>
+                        <li><a href="service-single.php">MOBILE APPS</a></li>
+                    </ul>
+                    <span class="icon"></span>
                 </li>
                 <li>
                     <a href="clients.php">CLIENTS</a>
