@@ -148,4 +148,16 @@
             }
         }
     }
+
+    .map {
+        display: none;
+
+        @include mq('tablet', max) {
+            display: block;
+        }
+
+        iframe {
+            width: 100%;
+        }
+    }
 }
