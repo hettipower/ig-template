@@ -122,6 +122,10 @@ header {
                     padding: 10px 15px;
                     text-decoration: none;
 
+                    &:hover {
+                        color: $green;
+                    }
+
                     &.link_btn {
                         background-color: $green;
                         border-radius: 50px;
@@ -132,8 +136,6 @@ header {
                         -moz-transition: 0.5s all ease;
                         -ms-transition: 0.5s all ease;
                         -o-transition: 0.5s all ease;
-
-                        animation: blinking 1s infinite;
 
                         &:hover{
                             background-color: #000;

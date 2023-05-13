@@ -101,6 +101,12 @@
                 font-size: 26px;
             }
 
+            form {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
             .form-group {
                 margin-bottom: 15px;
 

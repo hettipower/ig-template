@@ -71,15 +71,14 @@ footer {
                     -moz-transition: 0.5s all ease;
                     -ms-transition: 0.5s all ease;
                     -o-transition: 0.5s all ease;
-
                     width: 155px;
                     height: 44px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
-                    animation: blinking 1s infinite;
-
+                    animation: blinking 2s infinite;
+                    -webkit-animation: blinking 2s infinite;
+                    
                     &:hover{
                         background-color: #000;
                     }

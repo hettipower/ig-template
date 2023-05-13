@@ -70,30 +70,30 @@
                     <h2>Get in Touch</h2>
 
                     <form action="">
-                        <div class="form-group">
+                        <div class="form-group col-6">
                             <label for="">Name <span class="required">*</span></label>
                             <input type="text" class="form-control" placeholder="Name">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group col-6">
                             <label for="">Email Address <span class="required">*</span></label>
                             <input type="text" class="form-control" placeholder="Email Address">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group col-6">
                             <label for="">Phone Number <span class="required">*</span></label>
                             <input type="text" class="form-control" placeholder="Phone Number">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group col-6">
                             <label for="">Website</label>
                             <input type="text" class="form-control" placeholder="Website">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group col-12">
                             <label for="">Tell us more</label>
                             <textarea class="form-control" placeholder="Tell us more"></textarea>
                         </div>
 
                         <div class="g-recaptcha" data-sitekey="6LdDvJEUAAAAANqme8lbtXFwhxlAjc1ZOjYJyarO" data-callback="onSubmit"></div>
 
-                        <div class="btn-group">
+                        <div class="btn-group col-12">
                             <input type="submit" class="btn" value="SUBMIT">
                         </div>
                     </form>

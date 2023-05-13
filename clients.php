@@ -116,7 +116,7 @@
         </div>
     </section>
 
-    <div id="client1" class="client-content" style="display:none;max-width:1000px;">
+    <div id="client1" class="client-content" style="display:none;max-width:1200px;">
         <div class="content-inner">
             <div class="details">
                 <div class="logo"><img src="images/client/1.png" alt=""></div>
@@ -142,12 +142,12 @@
             </div>
             <div class="content">
                 <p><i>"We have worked with Craig for many years. The team are extremely quick to provide assistance with all our online marketing needs and have delivered good results year on year for our company. We could not be more pleased with our choice of SEO partner to help sell our dj kit. appreciate the work and loyalty over the years providing our djkit.com site a successful organic promo on Google. its great to have someone always on the other end of the line to support, thanks"</i></p>
-                <p><strong>— James - Managing Director</strong></p>
+                <p><strong>James - Managing Director</strong></p>
             </div>
         </div>
     </div>
 
-    <div id="client2" class="client-content" style="display:none;max-width:1000px;">
+    <div id="client2" class="client-content" style="display:none;max-width:1200px;">
         <div class="content-inner">
             <div class="details">
                 <div class="logo"><img src="images/client/2.png" alt=""></div>
@@ -173,12 +173,12 @@
             </div>
             <div class="content">
                 <p><i>"We have worked with Craig for many years. The team are extremely quick to provide assistance with all our online marketing needs and have delivered good results year on year for our company. We could not be more pleased with our choice of SEO partner to help sell our dj kit. appreciate the work and loyalty over the years providing our djkit.com site a successful organic promo on Google. its great to have someone always on the other end of the line to support, thanks"</i></p>
-                <p><strong>— James - Managing Director</strong></p>
+                <p><strong>James - Managing Director</strong></p>
             </div>
         </div>
     </div>
 
-    <div id="client3" class="client-content" style="display:none;max-width:1000px;">
+    <div id="client3" class="client-content" style="display:none;max-width:1200px;">
         <div class="content-inner">
             <div class="details">
                 <div class="logo"><img src="images/client/3.png" alt=""></div>
@@ -204,12 +204,12 @@
             </div>
             <div class="content">
                 <p><i>"We have worked with Craig for many years. The team are extremely quick to provide assistance with all our online marketing needs and have delivered good results year on year for our company. We could not be more pleased with our choice of SEO partner to help sell our dj kit. appreciate the work and loyalty over the years providing our djkit.com site a successful organic promo on Google. its great to have someone always on the other end of the line to support, thanks"</i></p>
-                <p><strong>— James - Managing Director</strong></p>
+                <p><strong>James - Managing Director</strong></p>
             </div>
         </div>
     </div>
 
-    <div id="client4" class="client-content" style="display:none;max-width:1000px;">
+    <div id="client4" class="client-content" style="display:none;max-width:1200px;">
         <div class="content-inner">
             <div class="details">
                 <div class="logo"><img src="images/client/4.png" alt=""></div>
@@ -235,12 +235,12 @@
             </div>
             <div class="content">
                 <p><i>"We have worked with Craig for many years. The team are extremely quick to provide assistance with all our online marketing needs and have delivered good results year on year for our company. We could not be more pleased with our choice of SEO partner to help sell our dj kit. appreciate the work and loyalty over the years providing our djkit.com site a successful organic promo on Google. its great to have someone always on the other end of the line to support, thanks"</i></p>
-                <p><strong>— James - Managing Director</strong></p>
+                <p><strong>James - Managing Director</strong></p>
             </div>
         </div>
     </div>
 
-    <div id="client5" class="client-content" style="display:none;max-width:1000px;">
+    <div id="client5" class="client-content" style="display:none;max-width:1200px;">
         <div class="content-inner">
             <div class="details">
                 <div class="logo"><img src="images/client/5.png" alt=""></div>
@@ -266,12 +266,12 @@
             </div>
             <div class="content">
                 <p><i>"We have worked with Craig for many years. The team are extremely quick to provide assistance with all our online marketing needs and have delivered good results year on year for our company. We could not be more pleased with our choice of SEO partner to help sell our dj kit. appreciate the work and loyalty over the years providing our djkit.com site a successful organic promo on Google. its great to have someone always on the other end of the line to support, thanks"</i></p>
-                <p><strong>— James - Managing Director</strong></p>
+                <p><strong>James - Managing Director</strong></p>
             </div>
         </div>
     </div>
 
-    <div id="client6" class="client-content" style="display:none;max-width:1000px;">
+    <div id="client6" class="client-content" style="display:none;max-width:1200px;">
         <div class="content-inner">
             <div class="details">
                 <div class="logo"><img src="images/client/6.png" alt=""></div>
@@ -297,12 +297,12 @@
             </div>
             <div class="content">
                 <p><i>"We have worked with Craig for many years. The team are extremely quick to provide assistance with all our online marketing needs and have delivered good results year on year for our company. We could not be more pleased with our choice of SEO partner to help sell our dj kit. appreciate the work and loyalty over the years providing our djkit.com site a successful organic promo on Google. its great to have someone always on the other end of the line to support, thanks"</i></p>
-                <p><strong>— James - Managing Director</strong></p>
+                <p><strong>James - Managing Director</strong></p>
             </div>
         </div>
     </div>
 
-    <div id="client7" class="client-content" style="display:none;max-width:1000px;">
+    <div id="client7" class="client-content" style="display:none;max-width:1200px;">
         <div class="content-inner">
             <div class="details">
                 <div class="logo"><img src="images/client/7.png" alt=""></div>
@@ -328,12 +328,12 @@
             </div>
             <div class="content">
                 <p><i>"We have worked with Craig for many years. The team are extremely quick to provide assistance with all our online marketing needs and have delivered good results year on year for our company. We could not be more pleased with our choice of SEO partner to help sell our dj kit. appreciate the work and loyalty over the years providing our djkit.com site a successful organic promo on Google. its great to have someone always on the other end of the line to support, thanks"</i></p>
-                <p><strong>— James - Managing Director</strong></p>
+                <p><strong>James - Managing Director</strong></p>
             </div>
         </div>
     </div>
 
-    <div id="client8" class="client-content" style="display:none;max-width:1000px;">
+    <div id="client8" class="client-content" style="display:none;max-width:1200px;">
         <div class="content-inner">
             <div class="details">
                 <div class="logo"><img src="images/client/8.png" alt=""></div>
@@ -359,7 +359,7 @@
             </div>
             <div class="content">
                 <p><i>"We have worked with Craig for many years. The team are extremely quick to provide assistance with all our online marketing needs and have delivered good results year on year for our company. We could not be more pleased with our choice of SEO partner to help sell our dj kit. appreciate the work and loyalty over the years providing our djkit.com site a successful organic promo on Google. its great to have someone always on the other end of the line to support, thanks"</i></p>
-                <p><strong>— James - Managing Director</strong></p>
+                <p><strong>James - Managing Director</strong></p>
             </div>
         </div>
     </div>

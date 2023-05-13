@@ -101,14 +101,16 @@
                     position: relative;
 
                     &::before {
-                        position: absolute;
-                        width: 7px;
-                        height: 7px;
-                        left: 8px;
-                        top: 8px;
-                        background-color: $green;
-                        content: "";
-                        border-radius: 100%;
+                        @include pseudo;
+                        @include fa-icon;
+                        @extend .fas;
+
+                        content: fa-content($fa-var-check);
+
+                        color: $green;
+
+                        left: 4px;
+                        top: 4px;
                     }
                 }
             }

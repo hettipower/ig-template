@@ -375,6 +375,8 @@ a.dc-btn, body, h1, h2, h3, h4, h5, h6, ul li, ol li {
 .fa,
 .fas,
 .blog-container .blog-section .inner .blog-wrap .blog-item .content .meta::before,
+.service-single .content-wrap .full ul li::before,
+.home-content .inner .main-slider .item .item-inner .content ul li::before,
 a.arrow-right:after,
 .fa-solid,
 .far,
@@ -17244,7 +17246,7 @@ readers do not read off random characters that represent icons */
   font-display: block;
   src: url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.ttf") format("truetype");
 }
-.fas, .blog-container .blog-section .inner .blog-wrap .blog-item .content .meta::before, a.arrow-right:after,
+.fas, .blog-container .blog-section .inner .blog-wrap .blog-item .content .meta::before, .service-single .content-wrap .full ul li::before, .home-content .inner .main-slider .item .item-inner .content ul li::before, a.arrow-right:after,
 .fa-solid {
   font-family: "Font Awesome 6 Pro";
   font-weight: 900;
@@ -19439,6 +19441,19 @@ readers do not read off random characters that represent icons */
     SETTINGS - RESPONSIVE BREAK POINTS
 
 \*------------------------------------*/
+.col-6 {
+  width: 48%;
+}
+@media only screen and (max-width: 767px) {
+  .col-6 {
+    width: 100%;
+  }
+}
+
+.col-12 {
+  width: 100%;
+}
+
 /* SETTINGS - COLORS */
 /*------------------------------------*\
 
@@ -19972,6 +19987,9 @@ header nav .navigation li a {
   padding: 10px 15px;
   text-decoration: none;
 }
+header nav .navigation li a:hover {
+  color: #009e61;
+}
 header nav .navigation li a.link_btn {
   background-color: #009e61;
   border-radius: 50px;
@@ -19982,7 +20000,6 @@ header nav .navigation li a.link_btn {
   -moz-transition: 0.5s all ease;
   -ms-transition: 0.5s all ease;
   -o-transition: 0.5s all ease;
-  animation: blinking 1s infinite;
 }
 header nav .navigation li a.link_btn:hover {
   background-color: #000;
@@ -20147,7 +20164,8 @@ footer .container .link a.link_btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: blinking 1s infinite;
+  animation: blinking 2s infinite;
+  -webkit-animation: blinking 2s infinite;
 }
 footer .container .link a.link_btn:hover {
   background-color: #000;
@@ -20436,6 +20454,33 @@ ARTICLE SECTION
 .home-content .inner .main-slider .item .item-inner .content h1 span {
   color: #009e61;
 }
+.home-content .inner .main-slider .item .item-inner .content ul {
+  padding: 0;
+  margin: 0;
+  color: #000000;
+}
+.home-content .inner .main-slider .item .item-inner .content ul li {
+  margin-left: 0;
+  list-style: none;
+  padding-left: 25px;
+  position: relative;
+}
+.home-content .inner .main-slider .item .item-inner .content ul li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  content: "";
+  color: #009e61;
+  left: 4px;
+  top: 4px;
+}
 
 @media only screen and (max-width: 999px) {
   .client-carousel {
@@ -20651,14 +20696,20 @@ ARTICLE SECTION
   position: relative;
 }
 .service-single .content-wrap .full ul li::before {
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  left: 8px;
-  top: 8px;
-  background-color: #009e61;
   content: "";
-  border-radius: 100%;
+  display: block;
+  position: absolute;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  content: "";
+  color: #009e61;
+  left: 4px;
+  top: 4px;
 }
 
 .white-label .content-wrap .right {
@@ -20766,6 +20817,11 @@ ARTICLE SECTION
 }
 .contact-wrap .content-wrap .form h2 {
   font-size: 26px;
+}
+.contact-wrap .content-wrap .form form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .contact-wrap .content-wrap .form .form-group {
   margin-bottom: 15px;
@@ -21192,7 +21248,7 @@ button.slick-arrow:hover, button.slick-arrow:focus {
   text-align: center;
   padding-top: 25px;
   color: #000;
-  font-size: 18px;
+  font-size: 20px;
   padding-left: 30px;
 }
 @media only screen and (max-width: 767px) {

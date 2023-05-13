@@ -42,6 +42,7 @@ jQuery(document).ready(function ($) {
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1000,
@@ -55,14 +56,16 @@ jQuery(document).ready(function ($) {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 2,
+          arrows: true,
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows: true,
         }
       }
     ]

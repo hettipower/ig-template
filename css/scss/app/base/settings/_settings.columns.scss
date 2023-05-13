@@ -1,0 +1,11 @@
+.col-6 {
+    width: 48%;
+
+    @include mq('tablet', max) {
+        width: 100%;
+    }
+}
+
+.col-12 {
+    width: 100%;
+}

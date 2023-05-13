@@ -1,4 +1,4 @@
-/*! css 1.0.0 filename.js 2023-05-07 9:36:29 PM */
+/*! css 1.0.0 filename.js 2023-05-13 10:07:05 PM */
 
 jQuery(document).ready(function($) {
     Fancybox.bind("[data-fancybox]", {});
@@ -35,6 +35,7 @@ jQuery(document).ready(function($) {
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
+        arrows: false,
         responsive: [ {
             breakpoint: 1e3,
             settings: {
@@ -46,13 +47,15 @@ jQuery(document).ready(function($) {
             breakpoint: 600,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 2,
+                arrows: true
             }
         }, {
             breakpoint: 480,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                arrows: true
             }
         } ]
     });
