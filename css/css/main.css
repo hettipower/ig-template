@@ -20651,6 +20651,7 @@ ARTICLE SECTION
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 @media only screen and (max-width: 767px) {
   .service-single .content-wrap .right {
@@ -20665,6 +20666,19 @@ ARTICLE SECTION
   font-weight: 700;
   font-size: 15px;
   color: #000000;
+}
+.service-single .content-wrap .right .pdf {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 10;
+}
+.service-single .content-wrap .right .pdf a {
+  color: #009e61;
+}
+.service-single .content-wrap .right .pdf svg {
+  width: 20px;
+  height: 20px;
 }
 .service-single .content-wrap .full {
   width: 100%;
@@ -21242,6 +21256,12 @@ button.slick-arrow:hover, button.slick-arrow:focus {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+@media only screen and (max-width: 767px) {
+  .fancybox__container .client-content .content-inner {
+    overflow: auto;
+    height: 91vh;
+  }
 }
 .fancybox__container .client-content .content-inner .content {
   flex: 1;
