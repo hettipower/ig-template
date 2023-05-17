@@ -1,4 +1,7 @@
 .service-single {
+    align-items: flex-start !important;
+    padding-top: 60px;
+
     .content-wrap {
         display: flex;
         justify-content: space-between;
@@ -124,6 +127,7 @@
                         @extend .fas;
 
                         content: fa-content($fa-var-check);
+                        font-weight: 900;
 
                         color: $green;
 

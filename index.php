@@ -12,7 +12,7 @@
                             <p>Established in 2004 as one of the first UK SEO companies for Google, iCONQUER provide complete internet marketing solutions. If you require an online marketing service, we have the ingredients that will add value to your business. Contact us for a no obligation consultation.</p>
 
                             <ul>
-                                <li>5* reputation</li>
+                                <li>5 star reputation</li>
                                 <li>Over 20 years experience</li>
                                 <li>Dedicated account managers</li>
                                 <li>Monthly reports and monitoring</li>
@@ -32,7 +32,7 @@
                             <p>Established in 2004 as one of the first UK SEO companies for Google, iCONQUER provide complete internet marketing solutions. If you require an online marketing service, we have the ingredients that will add value to your business. Contact us for a no obligation consultation.</p>
 
                             <ul>
-                                <li>5* reputation</li>
+                                <li>5 star reputation</li>
                                 <li>Over 20 years experience</li>
                                 <li>Dedicated account managers</li>
                                 <li>Monthly reports and monitoring</li>
@@ -52,7 +52,7 @@
                             <p>Established in 2004 as one of the first UK SEO companies for Google, iCONQUER provide complete internet marketing solutions. If you require an online marketing service, we have the ingredients that will add value to your business. Contact us for a no obligation consultation.</p>
 
                             <ul>
-                                <li>5* reputation</li>
+                                <li>5 star reputation</li>
                                 <li>Over 20 years experience</li>
                                 <li>Dedicated account managers</li>
                                 <li>Monthly reports and monitoring</li>

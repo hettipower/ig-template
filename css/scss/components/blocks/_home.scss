@@ -6,6 +6,10 @@
 
         padding-left: 95px !important;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         @include mq('1000', max) {
             padding-left: 30px !important;
             padding-right: 30px !important;
@@ -14,6 +18,7 @@
         .main-slider {
 
             padding: 0 20px;
+            width: 100%;
 
             @include mq('1000', max) {
                 padding: 0 15px;
@@ -31,7 +36,7 @@
                     }
 
                     .image {
-                        max-width: 679px;
+                        max-width: 560px;
                         width: 100%;
                     }
             
@@ -83,6 +88,8 @@
                                     @extend .fas;
             
                                     content: fa-content($fa-var-check);
+
+                                    font-weight: 900;
             
                                     color: $green;
             
